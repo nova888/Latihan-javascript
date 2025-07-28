@@ -7,8 +7,10 @@
 </head>
 <body>
     <script>
-        const color = "red"       
-        document.write(color)
+        currentYear = new Date().getFullYear()
+        let birthYear = parseInt(prompt("Masukkan Tahun Lahir Anda"))
+        let age = currentYear - birthYear
+        console.log(`umur anda saat ini adalah ` + age)
         
     </script>
 </body>
