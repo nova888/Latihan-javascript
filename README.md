@@ -1,1 +1,1 @@
-latihan Javascript
+latihan Javascript dan contoh modul-modulnya
