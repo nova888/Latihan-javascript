@@ -35,7 +35,7 @@
             <br>
                              <input type="radio" name="Status" value="Belum Kawin"> Belum Kawin            
             <br>
-            jurusan di sini : <select name="Kelamin" size="1">
+            jurusan di sini : <select name="Jurusan" size="1">
                                 <option value="Teknik Informatika">Teknik Informatika</option>
                                 <option value="Sistem Informasi">Sistem Informasi</option>
                                 <option value="Teknik Komputer">Teknik Komputer</option>
@@ -43,7 +43,7 @@
                                 <option value="Komputerisasi Akuntansi">Komputerisasi Akuntansi</option>
                                 <option value="Teknologi Informasi">Teknologi Informasi</option>
                             </select><br>
-            Komentar        : <textarea name="komentar" rows="3" cols="30"></textarea><br>
+            Komentar        : <textarea name="Komentar" rows="3" cols="30"></textarea><br>
         </pre>
             <input type="button" value="Kirim" onclick="Tekan()">     <input type="reset" value="Ulang">
         <pre>
@@ -77,7 +77,7 @@
             var jurusanstr = document.fform.Jurusan.value;
             document.fform.ojurusan.value = jurusanstr;
 
-            var komentarstr = document.fform.komentar.value;
+            var komentarstr = document.fform.Komentar.value;
             document.fform.oket.value = komentarstr;
                        
         }   
