@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        h1 {
+            text-align: center;
+            color: rgb(12, 12, 13);
+        }
+    </style>
+    <h1>Data Mahasiswa</h1>
+    <h1>Universitas Komputer Indonesia</h1><hr><br>
+    <form name="fform">
+        <pre>
+            NIM             : <input type="text" name="nim"><br>
+            Nama Mahasiswa  : <input type="text" name="nama"><br>
+            jenis Kelamin   : <select name="Kelamin" size="1">
+                                <option value="Laki-laki">Laki-laki</option>
+                                <option value="Perempuan">Perempuan</option>
+                            </select><br>   
+            Agama           : <select name="Agama" size="1">
+                                <option value="Islam">Islam</option>
+                                <option value="Kristen">Kristen</option>
+                                <option value="Hindu">Hindu</option>
+                                <option value="Budha">Budha</option>
+                                <option value="Konghucu">Konghucu</option>
+                                <option value="Tidak Beragama">Tidak Beragama</option>
+                                <option value="Murtad">Murtad</option>
+                            </select><br><p>
+            Status          :<input type="radio" name="Status" value="Kawin"> Kawin            
+            <br>
+                             <input type="radio" name="Status" value="Belum Kawin"> Belum Kawin            
+            <br>
+            jurusan di sini : <select name="Kelamin" size="1">
+                                <option value="Teknik Informatika">Teknik Informatika</option>
+                                <option value="Sistem Informasi">Sistem Informasi</option>
+                                <option value="Teknik Komputer">Teknik Komputer</option>
+                                <option value="Manajemen Informatika">Manajemen Informatika</option>
+                                <option value="Komputerisasi Akuntansi">Komputerisasi Akuntansi</option>
+                                <option value="Teknologi Informasi">Teknologi Informasi</option>
+                            </select><br>
+            Komentar        : <textarea name="komentar" rows="3" cols="30"></textarea><br>
+        </pre>
+            <input type="button" value="Kirim" onclick="Tekan()">     <input type="reset" value="Ulang">
+        <pre>
+            NIM             : <input type="text" size="11" name="onim"><br>
+            Nama Mahasiswa  : <input type="text" size="11" name="onama"><br>
+            jenis Kelamin   : <input type="text" size="30" name="okelamin"><br>   
+            Agama           : <input type="text" size="11" name="oagama"><br>
+            Status          : <input type="text" size="11" name="ostatus"><br>
+            jurusan di sini : <input type="text" size="11" name="ojurusan"><br>
+            Komentar        : <textarea name="oket" rows="3" cols="30"></textarea>
+        </pre>
+        
+    </form>
+    <script>
+        function Tekan() {
+            var nimstr = document.fform.nim.value;
+            document.fform.onim.value = nimstr;
+
+            var namastr = document.fform.nama.value;
+            document.fform.onama.value = namastr;
+
+            var kelaminstr = document.fform.Kelamin.value;
+            document.fform.okelamin.value = kelaminstr;
+
+            var agamastr = document.fform.Agama.value;
+            document.fform.oagama.value = agamastr;
+
+            var statusstr = document.fform.Status.value;
+            document.fform.ostatus.value = statusstr;
+
+            var jurusanstr = document.fform.Jurusan.value;
+            document.fform.ojurusan.value = jurusanstr;
+
+            var komentarstr = document.fform.komentar.value;
+            document.fform.oket.value = komentarstr;
+                       
+        }   
+    </script>
+</body>
+</html>
